@@ -1,0 +1,36 @@
+extends ./layout/index
+
+block slider 
+  .slider
+    h1 Rio de Janeiro
+    em aventure
+
+block content 
+  main.container.mt-5 
+    h2.text-center.mb-5 About us
+    .row.mb-5 
+      .col-md-6
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum modi omnis necessitatibus hic exercitationem aut inventore placeat amet animi praesentium iure id facilis, labore a? Facilis, nobis officia. Impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos eveniet, alias error perspiciatis pariatur laborum nemo, porro magnam cumque ipsa id maxime suscipit iure facere saepe sit accusamus illum.
+
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vero minima voluptas. Tempora iure delectus perferendis eius et autem ut provident reprehenderit quaerat non, laborum tenetur maxime numquam quos itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt reprehenderit possimus tempore nobis sint deleniti voluptatum, nihil placeat! Debitis porro quidem quam, ipsum exercitationem laborum consequuntur laudantium neque enim aliquam!
+      .col-md-6
+        img(src="/img/inicio_nosotros.jpg", alt="About image", class="img-fluid")
+
+    h2.text-center.my-5 Travels
+    include ./layout/block_travels
+
+    .descuento 
+      .container 
+        .row 
+          .col-md-6
+            .contenido 
+              h3 5% Discount 
+              p.titulo Trip to Canada 
+              p.fecha March 20, 2022 - March 28, 2022
+              p.precio USD$ 2.500 
+
+
+    h2.text-center.my-5 Testimonials
+    include ./layout/block_testimonials
+    a(href="/testimonials", class="btn btn-success btn-block btn-testimonials") More Testimonials
+

@@ -1,0 +1,20 @@
+//- Este layout nos sirve como pagina que se mostrara en todas las demas
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{siteName} | #{page}
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@700&display=swap' rel='stylesheet')
+    link(rel="stylesheet", href="/css/bootstrap.css")
+    link(rel="stylesheet", href="/css/style.css")
+
+  body(class= hero) 
+    include header
+    block slider
+    block content
+
+    include footer
